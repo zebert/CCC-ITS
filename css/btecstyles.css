@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+	Author: John Clifford
+	Date:   3/26/2018
+	Filename: css/btecstyles.css
+*/
+/*== Custom page colors ==
+
+Green: #29512E
+Dark Blue: #001b68
+Light Grey: #CAC0B8
+Brown Grey #5F5347
+Light Blue #87ACED
+Grey #B1A899
+Dark Grey #4C515E
+*/
+body {
+	width: 100%;
+	height: 100%;
+ 	padding-top: 55px;
+	background-color: #B1A899; 
+} 
+
+section#main {
+   margin-top: 35px;
+}
+
+section#main #pagetitle {
+   text-align: center;
+	font-style: italic;
+	font-variant: small-caps;
+}
+
+
+/* adjust the width of the pill box */
+section#main .nav > .nav-link {
+   width: 20rem;
+   color: black;
+}
+

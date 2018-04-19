@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*
+	Author: John Clifford
+	Date:   3/5/2018
+	Filename: css/effects.css
+*/
+
+/*== Custom page colors ==
+
+Green: #29512E
+Dark Blue: #001b68
+Light Grey: #CAC0B8
+Brown Grey #5F5347
+Light Blue #87ACED
+Grey #B1A899
+Dark Grey #4C515E
+*/
+
+
+/* testimonial cite images */
+
+.testimonial cite {
+   display: block;
+   margin: 0px auto 30px;
+   text-align: center;
+   width: 70%;
+}
+.testimonial > cite > img {
+	border-radius: 50px 50px;
+   width: 30%;
+}
+
+/* Copyright control */
+.footer-copyright {
+  padding: 10px;
+  background-color: #B1A899;  /*#87ACED;*/
+  color: black;  /* rgba(255, 255, 255, 0.4); */
+  text-align: center;
+  font-size: 10px;
+  line-height: 14px;
+
+}
+.footer-copyright a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 749px) {
+  .footer-copyright {
+    line-height: 20px;
+  }
+}
+@media (min-width: 750px) {
+  .footer-copyright {
+    padding: 10px 32px;
+  }
+}
+
+/* Top nav controls.  Line height */
+.topnav .navbar-nav .nav-item {
+	line-height: .5em;
+}
+
+
+/* Bottom nav controls.  Line height, and colors. */
+
+
+.bottomnav .navbar {
+	background-color: #B1A899;  /*#87ACED;*/
+	width: 16.5rem;
+}
+
+.bottomnav .navbar-toggler:hover,
+.bottomnav .navbar-toggler:focus {
+  background-color: #563D7C;
+  color: white;
+}
+
+.bottomnav .navbar-nav .nav-item {
+	line-height: .5em;
+}
+.bottomnav .navbar-nav .nav-item .nav-link {
+	color: black;
+}
+.bottomnav .navbar-nav .nav-item .nav-link:hover {
+	color: white;
+}
+

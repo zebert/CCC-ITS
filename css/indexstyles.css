@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*
+	Author: John Clifford
+	Date:   3/5/2018
+	Filename: css/indexstyles.css
+*/
+
+
+/*== Custom page colors ==
+
+Green: #29512E
+Dark Blue: #001b68
+Light Grey: #CAC0B8
+Brown Grey #5F5347
+Light Blue #87ACED
+Grey #B1A899
+Dark Grey #4C515E
+*/
+
+html {
+  position: relative;
+  min-height: 90%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+ 	padding-top: 100px;
+	background-color: #B1A899;
+} 
+
+.jumbotron  {
+	background-color: #B1A899;
+	text-align: center;
+	margin: auto;
+	text-shadow:gray 0.3em 0.3em 0.3em;
+	height: 100%;
+	width: 100%;
+}
+
+	
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.imagestyle > img {
+  width: 100%;
+  height: 100%;
+  border:0;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+	height: 2rem;
+	width: 2rem;
+	margin-top: 56%;
+	border-radius: 0;
+	border: 0;
+}
+
+
+/* control unlock your potential headers */
+.unlock {
+	width: 100%;
+	text-align: center;
+	color: black;
+	/* text-shadow: none; */
+}
+.unlock h6 {
+	font-size: .8rem;
+	color: green;
+}
+
+/*  =========================================
+	Mobile styles: 0px to 480px
+	=========================================
+*/
+@media only screen and (max-width: 480px) {
+	/* Carousel base class */
+	.carousel {
+	  margin-bottom: 1rem;
+	  width: 100%;
+	  margin-left: .05rem;	/* move carousel left (lower number) or right (higher number) */
+	}
+	
+	/* Declare heights because of positioning of img element */
+	.carousel-item {
+	  height: 25rem;
+	}
+/*
+	.carousel-item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 30rem;
+	}
+*/	
+	/* Image caption */
+	.carousel-caption > h1{
+		width: 100%;
+		margin: auto;
+		color: white;
+		text-shadow: none;
+		font-style: italic;
+		font-variant: small-caps;
+		text-align: left;
+		font-size: 1rem;
+	}
+}
+
+
+/*  =========================================
+	Tablet styles: 481px and greater
+	=========================================
+*/
+@media only screen and (min-width: 481px) {
+	.carousel {
+	  margin-bottom: 1rem;
+	  width: 100%;
+	  margin-left: .5rem;	/* move carousel left (lower number) or right (higher number) */
+	}
+	
+	/* Declare heights because of positioning of img element */
+	.carousel-item {
+	  height: 30rem;
+	}
+/*
+	.carousel-item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 40rem;
+	}
+*/	
+	.carousel-caption > h1{
+		width: 100%;
+		margin: auto;
+		color: white;
+		text-shadow: none;
+		font-style: italic;
+		font-variant: small-caps;
+		text-align: left;
+		font-size: 1rem;
+		
+	}
+}
+
+/*  =========================================
+	Desktop styles: 769px and greater
+	=========================================
+*/
+@media only screen and (min-width: 769px) {
+	.carousel {
+	  margin-bottom: 1rem;
+	  width: 70%;
+	  margin-left: 15.5rem;	/* move carousel left (lower number) or right (higher number) */
+	}
+	
+	/* Declare heights because of positioning of img element */
+	.carousel-item {
+	  height: 40rem;
+	  background-color: #777; 
+	}
+/*
+	.carousel-item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 40rem;
+	}
+*/	
+	.carousel-caption > h1{
+		width: 100%;
+		margin: auto;
+		color: white;
+		text-shadow: none;
+		font-style: italic;
+		font-variant: small-caps;
+		text-align: center;
+		font-size: 1.8rem;
+	}
+}
+
+
+
