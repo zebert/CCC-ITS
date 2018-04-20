@@ -29,7 +29,9 @@ Dark Grey #4C515E
 	border-radius: 50px 50px;
    width: 30%;
 }
-
+img#testimonialimg {
+	float: left;
+}
 /* Copyright control */
 .footer-copyright {
   padding: 10px;
@@ -43,6 +45,7 @@ Dark Grey #4C515E
 .footer-copyright a {
   color: inherit;
   text-decoration: none;
+  float: right;
 }
 @media (max-width: 749px) {
   .footer-copyright {
