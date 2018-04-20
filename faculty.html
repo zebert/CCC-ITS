@@ -16,7 +16,7 @@
 		<link href="css/btecstyles.css" rel="stylesheet" />
 		<title>Faculty</title>
 	</head>
-	<body>
+	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -231,44 +231,9 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			document.getElementById("menuicon").innerHTML = "MENU";
-			document.getElementById("quicklinkicon").innerHTML = "Quicklinks";
-		</script> 
-		<script>
-			$(document).ready(function(){
-				//Manage hash in URL to open the right pill
-				var hash = window.location.hash;
-				// If a hash is provided 
-				if(hash && hash.length>0)
-				{
-					var hash = hash.substring(1); // Remove the #
-					// Manage Pill titles
-					$('.nav-pills a').each(function( index ) {
-						if($(this).attr('id')==hash) {
-								$(this).addClass('active');
-								$(this).addClass('show');
-							}
-						else
-							{
-								$(this).removeClass('active');
-								$(this).removeClass('show');
-							}
-					});
-					// Manage Tab content
-					$('div.tab-content div').each(function( index ) {
-						if($(this).attr('id')==hash) {
-								$(this).addClass('active');
-								$(this).addClass('show');
-							}
-						else
-							{
-								$(this).removeClass('active');
-								$(this).removeClass('show');
-							}
-					});
-				}
-			});
-		</script>
+		<script src="js/navtitles.js"></script>
+		<script src="js/pilltablinks.js"></script>
+		<script src="js/urlpopup.js"></script>
+		<script src="js/onloadtimer.js"></script>
 	</body>
 </html>

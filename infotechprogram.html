@@ -14,11 +14,10 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" rel="stylesheet" />
 		<link href="css/effects.css" rel="stylesheet" />
 		<link href="css/btecstyles.css" rel="stylesheet" />
-		<link href="css/testimonialstyles.css" rel="stylesheet" />
 		<title>Information Technology</title>
 
 	</head>
-	<body>
+	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -176,7 +175,10 @@
 											<li>Demonstrate professional workplace skills to include:  teamwork, ethical practice, legal considerations and effective customer service.</li>
 											</ul>
 									
-									<p><a href="http://catalog.cccneb.edu/preview_entity.php?catoid=35&ent_oid=2970&hl" target="_blank" >Information Technology Catalog</a> </p>
+									<p><strong>CCC Catalog:</strong>
+									<a href="http://catalog.cccneb.edu/preview_entity.php?catoid=35&ent_oid=2970&hl" 
+									onclick="urlpopup(this.href,'myWindow','1100','400','yes');return false">
+									Information Technology Catalog</a></p>
 									
 									
 							</div>
@@ -302,9 +304,9 @@
 			</article>
 		</section>
 		
-		<div class="bottomnav">
+		<div class="bottomnav">		
 			<nav class="navbar fixed-bottom py-0 navbar-primary">   
-				<div class="container">
+				<div class="container-fluid">
 					<button id="quicklinkicon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbottom" aria-controls="navbottom" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -333,12 +335,13 @@
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
 						</ul>
+						<br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
 						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
@@ -347,16 +350,17 @@
 			</nav>
 		</div>
 
+
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			document.getElementById("menuicon").innerHTML = "MENU";
-			document.getElementById("quicklinkicon").innerHTML = "Quicklinks";
-		</script> 
+		<script src="js/navtitles.js"></script>
+		<script src="js/pilltablinks.js"></script>
+		<script src="js/urlpopup.js"></script>
+		<script src="js/onloadtimer.js"></script>
 
 	</body>
 </html>

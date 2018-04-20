@@ -17,7 +17,7 @@
 		<title>InfoTech</title>
 
 	</head>
-	<body>
+	<body onload="onloadtimer(300000)"  <!-- 5 minutes -->
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -55,13 +55,15 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" 
+									onclick="urlpopup(this.href,'myWindow','1100','400','yes');return false">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+									onclick="urlpopup(this.href,'myWindow','1100','400','yes');return false">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
 								</div>
 							</li>
@@ -76,16 +78,6 @@
 				<!-- <h1 class="display-0"><strong>Information Technology & Systems / Business Technology</strong></h1>
 				-->
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
-				<!--	<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
-						<li data-target="#myCarousel" data-slide-to="5"></li>
-						<li data-target="#myCarousel" data-slide-to="6"></li>
-					</ol>
-				-->
 					<div class="carousel-inner">
 						<!-- make images the link -->
 						<div class="carousel-item active">
@@ -149,7 +141,16 @@
 									<h1>Business Technology Software</h1>
 								</div>
 							</a>
-						</div>						
+						</div>		
+
+						<div class="carousel-item">
+							<a class="imagestyle" href="external.html">
+								<img  src="images/carousel/devin.jpg" alt="">
+								<div class="carousel-caption">
+									<h1>CCC Video</h1>
+								</div>
+							</a>
+						</div>							
 					</div>
 					
 
@@ -201,12 +202,13 @@
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
 						</ul>
+						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
 						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
@@ -215,15 +217,16 @@
 			</nav>
 		</div>
 
+
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			document.getElementById("menuicon").innerHTML = "MENU";
-			document.getElementById("quicklinkicon").innerHTML = "Quicklinks";
-		</script> 
+		<script src="js/navtitles.js"></script>
+		<script src="js/pilltablinks.js"></script>
+		<script src="js/urlpopup.js"></script>
+		<script src="js/onloadtimer.js"></script>
 	</body>
 </html>

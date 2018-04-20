@@ -14,6 +14,8 @@ Light Blue #87ACED
 Grey #B1A899
 Dark Grey #4C515E
 */
+
+
 body {
 	width: 100%;
 	height: 100%;
@@ -23,6 +25,8 @@ body {
 
 section#main {
    margin-top: 35px;
+   height: 100%;
+   width: 100%;
 }
 
 section#main #pagetitle {
@@ -38,3 +42,12 @@ section#main .nav > .nav-link {
    color: black;
 }
 
+
+/* all link <a elements should be green */
+section#main a {
+    color: green;
+    text-decoration: none;
+	font-weight: bold;
+  /*font-size: 20px;
+  line-height: 20px;*/
+}

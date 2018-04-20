@@ -17,7 +17,7 @@
 		<title>BTEC Program</title>
 
 	</head>
-	<body>
+	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -55,13 +55,13 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
 								</div>
 							</li>
@@ -170,8 +170,11 @@
 									of Labor Statistics, U.S. Department of Labor, 
 									2017-2018 Occupational Outlook Handbook).
 								</p>
-								<p><strong><a href="https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm" target="_blank">View BLS details &raquo;</a></strong></p>
-
+								<p><strong>
+								<a href="https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm" 
+								onclick="urlpopup(this.href,'myWindow','1100','400','yes');return false">
+								View BLS details &raquo;</a>
+								</strong></p>
 							</div>
 							<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
 								<h3>Program Options</h3>
@@ -189,9 +192,9 @@
 								</p>
 								<p>
 									<h4>Options</h4>
-									<h5>Associate of Applied Science</h5>
+									<strong>Associate of Applied Science</strong>
 									<ul>
-										<li><a href="btecaasdegree.html" alt="">Business Technology AAS Degree</a><br/>
+										<li><strong><a href="btecaasdegree.html" alt="">Business Technology AAS Degree</a></strong><br/>
 											The Business Technology Degree provides the 
 											skills and knowledge necessary to prepare 
 											students for careers as business support 
@@ -200,7 +203,7 @@
 									</ul>
 									<strong>Diploma</strong>
 									<ul>
-										<li><a href="btecdiploma.html" alt="">Business Technology Diploma</a><br/>
+										<li><strong><a href="btecdiploma.html" alt="">Business Technology Diploma</a></strong><br/>
 											The Business Technology diploma provides students 
 											with the fundamental knowledge and skills necessary 
 											in various business occupations.
@@ -208,12 +211,12 @@
 									</ul>
 										<strong>Certificate</strong>
 									<ul>									
-										<li><a href="btecsoftware.html" alt="">Business Software Certificate</a><br/>
+										<li><strong><a href="btecsoftware.html" alt="">Business Software Certificate</a></strong><br/>
 											The Business Software Certificate provides 
 											students with the necessary software skills 
 											to be successful in any business setting.
 										</li>
-										<li><a href="btectechnology.html" alt="">Business Technology Certificate</a><br/>
+										<li><strong><a href="btectechnology.html" alt="">Business Technology Certificate</a></strong><br/>
 											The Business Technology Certificate prepares 
 											students with basic skills utilized in the workplace.
 										</li>
@@ -343,11 +346,9 @@
 			</article>
 		</section>
 		
-
-
-		<div class="bottomnav">
+		<div class="bottomnav">		
 			<nav class="navbar fixed-bottom py-0 navbar-primary">   
-				<div class="container">
+				<div class="container-fluid">
 					<button id="quicklinkicon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbottom" aria-controls="navbottom" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -376,12 +377,13 @@
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
 						</ul>
+						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
 						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
@@ -391,50 +393,17 @@
 		</div>
 
 
+
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script>
-			document.getElementById("menuicon").innerHTML = "MENU";
-			document.getElementById("quicklinkicon").innerHTML = "Quicklinks";
-		</script> 
-		<script>
-			$(document).ready(function(){
-				//Manage hash in URL to open the right pill
-				var hash = window.location.hash;
-				// If a hash is provided 
-				if(hash && hash.length>0)
-				{
-					var hash = hash.substring(1); // Remove the #
-					// Manage Pill titles
-					$('.nav-pills a').each(function( index ) {
-						if($(this).attr('id')==hash) {
-								$(this).addClass('active');
-								$(this).addClass('show');
-							}
-						else
-							{
-								$(this).removeClass('active');
-								$(this).removeClass('show');
-							}
-					});
-					// Manage Tab content
-					$('div.tab-content div').each(function( index ) {
-						if($(this).attr('id')==hash) {
-								$(this).addClass('active');
-								$(this).addClass('show');
-							}
-						else
-							{
-								$(this).removeClass('active');
-								$(this).removeClass('show');
-							}
-					});
-				}
-			});
-		</script>
+		<script src="js/navtitles.js"></script>
+		<script src="js/pilltablinks.js"></script>
+		<script src="js/urlpopup.js"></script>
+		<script src="js/onloadtimer.js"></script>
+		
 	</body>
 </html>
