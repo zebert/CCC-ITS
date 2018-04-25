@@ -17,7 +17,7 @@
 		<title>Information Technology</title>
 
 	</head>
-	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
+	<body onload="onloadtimer(0)">
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -47,6 +47,7 @@
 									<a class="dropdown-item" href="btecdiploma.html">BTEC Diploma</a>
 									<a class="dropdown-item" href="btecsoftware.html">BTEC Software Certificate</a>
 									<a class="dropdown-item" href="btectechnology.html">BTEC Technology Certificate</a>
+									<a class="dropdown-item" href="btecsocialmedia.html">BTEC Social Media Certificate</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -55,14 +56,17 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" href="get-comp-sci-students-excited.pdf" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
+									<a class="dropdown-item" href="external.html">Program Videos</a>
 								</div>
 							</li>
 						</ul>
@@ -111,17 +115,41 @@
 										<li>Information Technology & Systems Technical Support</li>
 									</ul>
 									Information Technology & Systems graduates are prepared to:
-									<p>
-										<ul>
-											<li>Design, configure, troubleshoot and maintain networking environments for small business and enterprise organizations.</li>
-											<li>Integrate technology resources into organizational and business processes using IT Service Management Techniques applying effective front-line technical support.</li>
-											<li>Create software applications using System Development Methodologies.</li>
-											<li>Demonstrate professional workplace skills to include:  teamwork, ethical practice, legal considerations and effective customer service.</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Design, configure, troubleshoot and maintain networking environments for small business and enterprise organizations.</li>
+										<li>Integrate technology resources into organizational and business processes using IT Service Management Techniques applying effective front-line technical support.</li>
+										<li>Create software applications using System Development Methodologies.</li>
+										<li>Demonstrate professional workplace skills to include:  teamwork, ethical practice, legal considerations and effective customer service.</li>
+									</ul>
 							</div>
 							<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-									<h3>Careers</h3><br />
+									<h3>Careers</h3>
+									<h3>Job Titles</h3>
+									<ul>
+										<li>Application Developer</li> 
+										<li>Computer Network Technician</li>
+										<li>Computer Programmer</li>
+										<li>Computer Support Specialist</li> 
+										<li>Database Administrator</li>
+										<li>Desktop Support Technician </li>
+										<li>Helpdesk Support</li> 
+										<li>Network Administrator</li>
+										<li>Network Analyst</li>
+										<li>Network Technician</li>
+										<li>Operations</li> 
+										<li>Programmer/Analyst</li> 
+										<li>Security Analyst</li>
+										<li>Server Administrator</li>
+										<li>Software Developer</li>
+										<li>Software Support Technician</li> 
+										<li>Software Tester</li> 
+										<li>Support Specialist</li> 
+										<li>Systems Administrator</li>
+										<li>Web Administrator</li>
+										<li>Web Developer</li> 
+									</ul>
+
+									<h3>Employment Outlook</h3>
 										<p>
 										According to the Bureau of Labor Statistics, employment of 
 										computer and information technology occupations is projected to grow 
@@ -130,15 +158,6 @@
 										Demand for these workers will stem from greater emphasis on 
 										cloud computing, the collection and storage of big data, and 
 										information security.
-										</p>
-										<p>
-										Job titles in this occupation include: <br />
-										Network Administrator, 
-										Network Analyst, Systems Administrator, Server Administrator, 
-										Computer Network Technician, Desktop Support Technician, Computer 
-										Support Specialist, Support Specialist, Software Support Technician, 
-										Helpdesk Support, Operations, Application Developer, Software Tester, 
-										Programmer/Analyst, Web Developer, Web Administrator and Database Developer.
 										</p>
 										<p>
 										The median annual wage for computer and information technology 
@@ -150,153 +169,136 @@
 	
 							</div>
 							<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-									<h3>Program Options</h3> </br>
-									
-									
-									<h4>Program Description</h4>
-										<p>The Information Technology & Systems (IT&S) program provides an educational environment where fundamental knowledge 
-										and professional experience needed in the information technology profession is gained.  Students are exposed to IT&S 
-										careers and technology through practical classroom experiences and lab activities. Students graduating from this program 
-										will be prepared to enter technology fields such as software development, helpdesk technical support or computer network 
-										design and support.  Information technology skills are used in nearly every business. Information Technology & Systems 
-										specialization areas include:</p>
-											<ul>
-												<li>Information Technology & Systems Developer</li>
-												<li>Information Technology & Systems Networking</li>
-												<li>Information Technology & Systems Technical Support</li>
-											</ul>
-									<h4>Student Learning Outcomes</h4>
-										<p>Information Technology & Systems graduates are prepared to:</p>
-											<ul>
-											<li>Design, configure, troubleshoot and maintain networking environments for small business and enterprise organizations.</li>
-											<li>Integrate technology resources into organizational and business processes using IT Service Management Techniques applying effective 
-											front-line technical support.</li>
-											<li>Create software applications using System Development Methodologies.</li>
-											<li>Demonstrate professional workplace skills to include:  teamwork, ethical practice, legal considerations and effective customer service.</li>
-											</ul>
-									
-									<p><strong>CCC Catalog:</strong>
-									<a href="http://catalog.cccneb.edu/preview_entity.php?catoid=35&ent_oid=2970&hl" 
-									onclick="urlpopup(this.href,'myWindow','1100','400','yes');return false">
-									Information Technology Catalog</a></p>
-									
-									
+								<h3>Program Options</h3>
+								<p>The Information Technology & Systems (IT&S) program provides an educational environment where fundamental knowledge 
+									and professional experience needed in the information technology profession is gained.  Students are exposed to IT&S 
+									careers and technology through practical classroom experiences and lab activities. Students graduating from this program 
+									will be prepared to enter technology fields such as software development, helpdesk technical support or computer network 
+									design and support.  Information technology skills are used in nearly every business. Information Technology & Systems 
+									specialization areas include:</p>
+								<ul>
+									<li>Information Technology & Systems Developer</li>
+									<li>Information Technology & Systems Networking</li>
+									<li>Information Technology & Systems Technical Support</li>
+								</ul>
+								<h4>Student Learning Outcomes</h4>
+								<p>Information Technology & Systems graduates are prepared to:</p>
+								<ul>
+								<li>Design, configure, troubleshoot and maintain networking environments for small business and enterprise organizations.</li>
+								<li>Integrate technology resources into organizational and business processes using IT Service Management Techniques applying effective 
+								front-line technical support.</li>
+								<li>Create software applications using System Development Methodologies.</li>
+								<li>Demonstrate professional workplace skills to include:  teamwork, ethical practice, legal considerations and effective customer service.</li>
+								</ul>
+								<p><strong>CCC Catalog:</strong>
+								<a href="http://catalog.cccneb.edu/preview_entity.php?catoid=35&ent_oid=2970&hl" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								Information Technology Catalog</a></p>
 							</div>
 							<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-									<h3>Question/Answer</h3><br />
+								<h3>Question/Answer</h3><br />
 								<dl>
-											<dt>
-											How much hands-on practice is included? 
-												<dd>A majority of the Information Technology & Systems program is hands-on.</dd>
-												<dd>Students will produce a variety of deliverables that can be included in a portfolio to take on future interviews.</dd>
-											</dt>
-											<dt>
-											How do instructors teach these courses?  What’s a typical day in class like?											
-												<dd>Courses are offered as lectures and also online.  Our degree can be completed on campus or also fully online.</dd>
-											</dt>
-											<dt>	
-											How much of your program (not including general education courses) can be completed online? 
-												
-												<dd>Our degree can be completed fully online.  We also have courses in 3 out of the 5 general education categories.</dd>
-											</dt>
-											<dt>	
-											How long is the program, certificate, diploma? 											
-												<dd>An Associate of Applied Science degree can be completed in 2 years for full time students.  A diploma can be completed 
-												in one year for full time students.  A certificate consists of 12 credits or typically 4 courses and can be completed in one 
-												semester depending on course availability.</dd>
-											</dt>
-											<dt>	
-											If there is waitlist-what can students do in the meantime? 
-												<dd>If the student is on a waitlist for a course, then we typically enroll them in another required course and the advisor 
-												monitors the wait listed students.  When an opening occurs the advisor enrolls the student accordingly all while keeping the 
-												student informed of the process.</dd>
-											</dt>	
+									<dt>How much hands-on practice is included? </dt>
+									<dd>A majority of the Information Technology & Systems program is hands-on.</dd>
+									<dd>Students will produce a variety of deliverables that can be included in a portfolio to take on future interviews.</dd>
+									<dt>How do instructors teach these courses?  What’s a typical day in class like?</dt>											
+									<dd>Courses are offered as lectures and also online.  Our degree can be completed on campus or also fully online.</dd>
+									<dt>How much of your program (not including general education courses) can be completed online? </dt>
+									<dd>Our degree can be completed fully online.  We also have courses in 3 out of the 5 general education categories.</dd>
+									<dt>How long is the program, certificate, diploma? </dt>											
+									<dd>An Associate of Applied Science degree can be completed in 2 years for full time students.  A diploma can be completed 
+										in one year for full time students.  A certificate consists of 12 credits or typically 4 courses and can be completed in one 
+										semester depending on course availability.</dd>
+									<dt>If there is waitlist-what can students do in the meantime? </dt>
+									<dd>If the student is on a waitlist for a course, then we typically enroll them in another required course and the advisor 
+										monitors the wait listed students.  When an opening occurs the advisor enrolls the student accordingly all while keeping the 
+										student informed of the process.</dd>
 								</dl>
 							</div>
 							<div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
 								<h3>Testimonials</h3><br/>
-									<img id="testimonialimg" src="images/testimonials/pc.png" alt="Peggy Chessmore" class="img-thumbnail" height=100 width=100>
-									<strong>Peggy Chessmore – Instructional Technology Support</strong>
-										<p>
-										Peggy Chessmore graduated in May 2000 with an Associate Degree in Information 
-										Technology, specializing as an Integrated Application Systems Specialist. She went 
-										on to receive her Bachelors and Master Degrees from Belleview University in Business 
-										Information Systems and Leadership, respectively. </p>
-										<p>
-										Starting in January of 2000 she starting working with the newly forming online courses 
-										in the Learning Support Services (LSS) office on the Hastings Campus of Central Community 
-										College.  Peggy is starting her 18th year of working in the LSS office as an Instructional 
-										Technology Specialist.</p>
-										<br/>
-										
-									<img id="testimonialimg" src="images/testimonials/austin.jpg" alt="Austin Shaw" class="img-thumbnail" height=100 width=100>
-									<strong>Austin Shaw – Systems Analyst</strong>
-										<p>
-										Austin Shaw received his Associate Degree in Information Technology – Developer and is a 
-										Systems Analyst for Mid-America Computer Corporation. He develops a desktop application for 
-										telephone companies that manages over 750,000 customers. The application also turns on phone 
-										and internet lines, and sends out their bills. He works with a team of 6 other developers. The 
-										application is coded in Delphi (which is similar to C#) and connects to a SQL Server Database. 
-										They also have a web app that connects to the same database as the desktop app, but with limited 
-										functionality. The web app is coded in C# and uses MVC software architecture. What he does on a 
-										daily basis is develop new functionality for their software, as well as analyze and design solutions 
-										for proposed changes. He also tracks down and repairs defects, and researches new technologies that 
-										will benefit their customers and integrates those upgrades into the existing software.</p>
-										<br/>
-										
-									<img id="testimonialimg" src="images/testimonials/simeon_portrait_med.jpg" alt="Simeon Berns" class="img-thumbnail" height=125 width=125>
-									<strong>Simeon Berns – Business Owner</strong>
-										<p>
-										I graduated the IT program at CCC in 2009. After graduating I worked at Hastings Utilities for almost 
-										5 years. During that time, I continued to progress and develop, using the skills I learned at CCC. In 2014 
-										I took a job at Xpanxion in Kearney, NE, where I worked with a team at Sony, building automated tests for 
-										one of their internal web applications. A couple years later, in 2016, I started my own software development 
-										consultancy and have been doing that ever since. These days I primarily work with Ruby on Rails, EmberJS and 
-										Cucumber.</p>
-										<p>
-										I think the most important thing I learned at CCC was how to think critically and problem solve. In my 
-										experience in the IT field (specifically software development), that is one of the most important skills to 
-										possess. You can learn a new language or tool by watching YouTube or just simple trial and error. But if you 
-										can’t solve problems and debug properly, then the new languages aren’t that useful.</p>
-										<br/>
-										
-									<img id="testimonialimg" src="images/testimonials/joe.jpg" alt="Joe McMinamen" class="img-thumbnail" height=100 width=100>
-									<strong>Joe McMinamen – Technology Director</strong>
-										<p>
-										I graduated from CCC IT program in 2008. After graduation I continued my education at Wayne State College 
-										while also working as an intern for ConAgra Foods in Omaha. I graduated from Wayne State in 2010 with a Bachelor 
-										degree in Computer Information Systems. My internship moved to full time employment and I continued with ConAgra 
-										Foods for 5 more years. I am currently the Technology Director for the West Harrison Community School in Mondamin, IA. 
-										Here I am in charge of all IT aspects from our 1 to 1 program down to networking and wireless technologies. </p>
-										<p>
-										The most important thing I learned at CCC was how to solve difficult problems using the tools and people around you. 
-										Learning to network with other students and IT professionals can help you to accomplish many tasks. The instructors are 
-										very supportive of their students and help give them the skills they will continue to use throughout their professional 
-										lives.</p>
-										<br/>
-										
-									<img id="testimonialimg" src="images/testimonials/dustin.jpg" alt="Dustin Johnson" class="img-thumbnail" height=100 width=100>
-									<strong>Dustin Johnson – IT Administrator</strong>
-										<p>
-										I was a student at CCC Hastings from 1998 to 2000.  It was a great place to learn and prep for future endeavors. The 
-										instructors were always easy to talk to and always willing to help. I took computer hardware and language base classes 
-										during my time there. </p>
-										<p>
-										After I graduated I went on to work for AxtellTech a small wireless ISP. Then in 2001 I jointed Platte Valley 
-										Communications as a Computer Technician and later becoming the IT Administrator, managing a team of IT and Security Technicians. 
-										We manage small business IT infrastructure; everything from running bulk cabling to server administration. We also install a full 
-										array of Access Control, Surveillance, and Security Systems. These days the line in between IT and Security is pretty thin. </p>
-										<br/>
+								<img class="testimonialimg" src="images/testimonials/pc.png" alt="Peggy Chessmore" height=110 width=100>
+								<strong>Peggy Chessmore – Instructional Technology Support</strong>
+									<p>
+									Peggy Chessmore graduated in May 2000 with an Associate Degree in Information 
+									Technology, specializing as an Integrated Application Systems Specialist. She went 
+									on to receive her Bachelors and Master Degrees from Belleview University in Business 
+									Information Systems and Leadership, respectively. </p>
+									<p>
+									Starting in January of 2000 she starting working with the newly forming online courses 
+									in the Learning Support Services (LSS) office on the Hastings Campus of Central Community 
+									College.  Peggy is starting her 18th year of working in the LSS office as an Instructional 
+									Technology Specialist.</p>
+									<br/>
 									
-									<img id="testimonialimg" src="images/testimonials/devin1.jpg" alt="Devin Burch" class="img-thumbnail" height=125 width=125>
-									<strong>Devin Burch - Current Student</strong>
-										<p>
-										CCC has given me the opportunity to reinvent myself and my future. In the nearly two years I've spent working towards a degree in 
-										Information Technology and Systems Development, I've learned so much and grown as a both a student and a soon-to-be software developer. 
-										The affordable program allowed me to focus on my education rather than worrying about how I would support myself while paying for college. 
-										Thanks to the dedication of the instructors and staff at CCC, I feel ready to move on to a great paying job in a field I've grown to love. 
-										What more could you ask for?</p>
-										<br/>
+								<img class="testimonialimg" src="images/testimonials/austin.jpg" alt="Austin Shaw" height=115 width=100>
+								<strong>Austin Shaw – Systems Analyst</strong>
+									<p>
+									Austin Shaw received his Associate Degree in Information Technology – Developer and is a 
+									Systems Analyst for Mid-America Computer Corporation. He develops a desktop application for 
+									telephone companies that manages over 750,000 customers. The application also turns on phone 
+									and internet lines, and sends out their bills. He works with a team of 6 other developers. The 
+									application is coded in Delphi (which is similar to C#) and connects to a SQL Server Database. 
+									They also have a web app that connects to the same database as the desktop app, but with limited 
+									functionality. The web app is coded in C# and uses MVC software architecture. What he does on a 
+									daily basis is develop new functionality for their software, as well as analyze and design solutions 
+									for proposed changes. He also tracks down and repairs defects, and researches new technologies that 
+									will benefit their customers and integrates those upgrades into the existing software.</p>
+									<br/>
+									
+								<img class="testimonialimg" src="images/testimonials/simeon_portrait_med.jpg" alt="Simeon Berns" height=105 width=105>
+								<strong>Simeon Berns – Business Owner</strong>
+									<p>
+									I graduated the IT program at CCC in 2009. After graduating I worked at Hastings Utilities for almost 
+									5 years. During that time, I continued to progress and develop, using the skills I learned at CCC. In 2014 
+									I took a job at Xpanxion in Kearney, NE, where I worked with a team at Sony, building automated tests for 
+									one of their internal web applications. A couple years later, in 2016, I started my own software development 
+									consultancy and have been doing that ever since. These days I primarily work with Ruby on Rails, EmberJS and 
+									Cucumber.</p>
+									<p>
+									I think the most important thing I learned at CCC was how to think critically and problem solve. In my 
+									experience in the IT field (specifically software development), that is one of the most important skills to 
+									possess. You can learn a new language or tool by watching YouTube or just simple trial and error. But if you 
+									can’t solve problems and debug properly, then the new languages aren’t that useful.</p>
+									<br/>
+									
+								<img class="testimonialimg" src="images/testimonials/joe.jpg" alt="Joe McMinamen" height=115 width=100>
+								<strong>Joe McMinamen – Technology Director</strong>
+									<p>
+									I graduated from CCC IT program in 2008. After graduation I continued my education at Wayne State College 
+									while also working as an intern for ConAgra Foods in Omaha. I graduated from Wayne State in 2010 with a Bachelor 
+									degree in Computer Information Systems. My internship moved to full time employment and I continued with ConAgra 
+									Foods for 5 more years. I am currently the Technology Director for the West Harrison Community School in Mondamin, IA. 
+									Here I am in charge of all IT aspects from our 1 to 1 program down to networking and wireless technologies. </p>
+									<p>
+									The most important thing I learned at CCC was how to solve difficult problems using the tools and people around you. 
+									Learning to network with other students and IT professionals can help you to accomplish many tasks. The instructors are 
+									very supportive of their students and help give them the skills they will continue to use throughout their professional 
+									lives.</p>
+									<br/>
+									
+								<img class="testimonialimg" src="images/testimonials/dustin.jpg" alt="Dustin Johnson" height=110 width=100>
+								<strong>Dustin Johnson – IT Administrator</strong>
+									<p>
+									I was a student at CCC Hastings from 1998 to 2000.  It was a great place to learn and prep for future endeavors. The 
+									instructors were always easy to talk to and always willing to help. I took computer hardware and language base classes 
+									during my time there. </p>
+									<p>
+									After I graduated I went on to work for AxtellTech a small wireless ISP. Then in 2001 I jointed Platte Valley 
+									Communications as a Computer Technician and later becoming the IT Administrator, managing a team of IT and Security Technicians. 
+									We manage small business IT infrastructure; everything from running bulk cabling to server administration. We also install a full 
+									array of Access Control, Surveillance, and Security Systems. These days the line in between IT and Security is pretty thin. </p>
+									<br/>
+								
+								<img class="testimonialimg" src="images/testimonials/devin1.jpg" alt="Devin Burch" height=110 width=105>
+								<strong>Devin Burch - Current Student</strong>
+									<p>
+									CCC has given me the opportunity to reinvent myself and my future. In the nearly two years I've spent working towards a degree in 
+									Information Technology and Systems Development, I've learned so much and grown as a both a student and a soon-to-be software developer. 
+									The affordable program allowed me to focus on my education rather than worrying about how I would support myself while paying for college. 
+									Thanks to the dedication of the instructors and staff at CCC, I feel ready to move on to a great paying job in a field I've grown to love. 
+									What more could you ask for?</p>
+									<br/>
 							</div>
 						</div>
 					</div>
@@ -313,38 +315,46 @@
 					<div class="collapse navbar-collapse" id="navbottom">
 						<ul class="navbar-nav">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a></li>
+								<a class="nav-link" href="index.html"><strong>Home</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="infotechprogram.html">InfoTech Program</a></li>
+								<a class="nav-link" href="infotechprogram.html"><strong>InfoTech Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="developer.html">Developer</a></li>
+								<a class="nav-link" href="developer.html">&#8226;&nbsp;Developer</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="networking.html">Networking</a></li>
+								<a class="nav-link" href="networking.html">&#8226;&nbsp;Networking</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="techsupport.html">Tech Support</a></li>
+								<a class="nav-link" href="techsupport.html">&#8226;&nbsp;Tech Support</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecprogram.html">BTEC Program</a></li>
+								<a class="nav-link" href="btecprogram.html"><strong>BTEC Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecaasdegree.html">BTEC AAS Degree</a></li>
+								<a class="nav-link" href="btecaasdegree.html">&#8226;&nbsp;AAS Degree</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecdiploma.html">BTEC Diploma</a></li>
+								<a class="nav-link" href="btecdiploma.html">&#8226;&nbsp;Diploma</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecsoftware.html">BTEC Software Certificate</a></li>
+								<a class="nav-link" href="btecsoftware.html">&#8226;&nbsp;Software Certificate</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btectechnology.html">BTEC Technology Certificate</a></li>
+								<a class="nav-link" href="btectechnology.html">&#8226;&nbsp;Technology Certificate</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="btecsocialmedia.html">&#8226;&nbsp;Social Media Certificate</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								Contact Us</a></li>							
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="external.html">Program Videos</a></li>
 						</ul>
-						<br/>
+						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
-						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
+						<a href="index.html">Copyright &copy;2018 Central Community College. All rights reserved.</a>
 					</div>
 				</div>
 			</nav>

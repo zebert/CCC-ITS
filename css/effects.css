@@ -19,6 +19,7 @@ Dark Grey #4C515E
 
 /* testimonial cite images */
 
+/*
 .testimonial cite {
    display: block;
    margin: 0px auto 30px;
@@ -29,8 +30,11 @@ Dark Grey #4C515E
 	border-radius: 50px 50px;
    width: 30%;
 }
-img#testimonialimg {
+*/
+.testimonialimg {
 	float: left;
+	border: solid 3px white;
+	margin-right: 10px;
 }
 /* Copyright control */
 .footer-copyright {

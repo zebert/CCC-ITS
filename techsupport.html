@@ -3,9 +3,9 @@
 	<head>
 		<!--
 			info1500 Semester Project
-			Author: Kaden Van Pelt 
+			Author: Avery Smiley 
 			Date:   3/26/2018
-			Filename: baselayout.html
+			Filename: techsupport.html
 		-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,10 +15,9 @@
 		<link href="css/effects.css" rel="stylesheet" />
 		<link href="css/btecstyles.css" rel="stylesheet" />
 		<title>Technical Support</title>
-
 	</head>
-	<body onload="setTimeout(function(){window.location = 'index.html';}, 300000)"> <!-- 5 minutes -->
-		<header>
+	<body onload="onloadtimer(0)">
+	<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
 					<img class="navbar-brand" src="images/logos/College_Vert_GIF_White.gif" alt="logo" height="65" width="65">
@@ -47,6 +46,7 @@
 									<a class="dropdown-item" href="btecdiploma.html">BTEC Diploma</a>
 									<a class="dropdown-item" href="btecsoftware.html">BTEC Software Certificate</a>
 									<a class="dropdown-item" href="btectechnology.html">BTEC Technology Certificate</a>
+									<a class="dropdown-item" href="btecsocialmedia.html">BTEC Social Media Certificate</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -55,14 +55,17 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" href="get-comp-sci-students-excited.pdf" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
+									<a class="dropdown-item" href="external.html">Program Videos</a>
 								</div>
 							</li>
 						</ul>
@@ -108,7 +111,6 @@
 								</p>
 								<h3>Outcomes</h3>
 								<p>
-								Student Learning Outcomes<br/>
 								Technical Support graduates are prepared to:
 								</p>
 								<ul>
@@ -121,7 +123,7 @@
 							</div>
 							<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
 								<h3>Careers</h3>
-								<p>
+
 								<h3>Job Titles</h3>
 								<ul>
 									<li>Help Desk Technician</li>
@@ -131,115 +133,120 @@
 									<li>IT Support Specialist</li>
 									<li>Software Support Technician</li>
 								</ul>
-								</p>
+
 								<h3>Employment Outlook</h3>
 									<b>What are the starting wages of graduates? Earning potential?</b>
-									<p>The median annual Technical Support Representative I salary is $34,676, 
+									
+									<p>The median annual Technical Support Representative salary is $34,676, 
 									as of March 29, 2018, with a range usually between $29,893-$43,625, 
 									however this can vary widely depending on a variety of factors. 
 									Our team of Certified Compensation Professionals has analyzed survey 
 									data collected from thousands of HR departments at companies of all 
 									sizes and industries to present this range of annual salaries for people 
 									with the job title Technical Support Representative I in the United States.</p>
-								<b>What local employers or potential employers hire your students? (banks, health care facilities, businesses, etc.)?</b>
-								<p>Some of our employers include Glenwood Communications, Spectrum(Charter) Communications,
-								Nebraska Public Power District(NPPD), Adams County, Hall County, State of Nebraska, 
-								The Buckle, Bellevue University, University of Nebraska at Kearney, Educational Service Units, 
-								Adam Central High School, Department of Defense, First Data and many more.</p>
+									
+									<b>What local employers or potential employers hire your students? (banks, health care facilities, businesses, etc.)?</b>
+								
+									<p>Some of our employers include Glenwood Communications, Spectrum(Charter) Communications,
+									Nebraska Public Power District(NPPD), Adams County, Hall County, State of Nebraska, 
+									The Buckle, Bellevue University, University of Nebraska at Kearney, Educational Service Units, 
+									Adam Central High School, Department of Defense, First Data and many more.</p>
 
-								<b>What career possibilities are available for students earning a:</b>
-								<ul>
-									<li>Certificate – This 12 credit option is a great advantage for students who may already have a degree or experience in another field.  Adding a certificate can enhance your employability.</li>
-									<li>Diploma – This one year, 30 credit option enables students to pursue work in the industry.  This option includes 9 credits of General Education courses and 21 credits in Information Technology and Systems courses.</li>
-									<li>Degree – The best option for students to pursue a career in Information Technology.  According to the Bureau of Labor Statistics, Information Technology occupations are expected to grow at 13%.</li>
-								</ul>
-								<p><a class="btn btn-secondary" href="https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm" role="button">View BLS details &raquo;</a></p>
+									<b>What career possibilities are available for students earning a:</b>
+									<ul>
+										<li>Certificate – This 12 credit option is a great advantage for students who may already have a degree or experience in another field.  Adding a certificate can enhance your employability.</li>
+										<li>Diploma – This one year, 30 credit option enables students to pursue work in the industry.  This option includes 9 credits of General Education courses and 21 credits in Information Technology and Systems courses.</li>
+										<li>Degree – The best option for students to pursue a career in Information Technology.  According to the Bureau of Labor Statistics, Information Technology occupations are expected to grow at 13%.</li>
+									</ul>
+								<p><strong>
+								<a href="https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								View BLS Details &raquo;</a></strong></p>
 							</div>
 							<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
 								<h3>Program Options</h3><br />
 								<p><strong>View the CCC Catalog for these Technical Support options:</strong></p>
-								<p><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10706&hl=%22Technical+Support%22&returnto=search" target="_blank">Information Technology & Systems Technical Support Specialization</a></p>
-								<p><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10871&hl=%22Technical+Support%22&returnto=search" target="_blank">Information Technology & Systems Technical Support AAS Plan of Study - Full-time</a></p>
-								<p><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10749&hl=%22Technical+Support%22&returnto=search" target="_blank">Information Technology & Systems Technical Support AAS Degree</a></p>
+								<p><strong><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10706&hl=%22Technical+Support%22&returnto=search" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Information Technology & Systems Technical Support Specialization</a></strong></p>
+								<p><strong><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10871&hl=%22Technical+Support%22&returnto=search" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Information Technology & Systems Technical Support AAS Plan of Study - Full-time</a></strong></p>
+								<p><strong><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10749&hl=%22Technical+Support%22&returnto=search" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Information Technology & Systems Technical Support AAS Degree</a></strong></p>
 							</div>
 							<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-								<h3>Questions/Answers</h3><br />
+								<h3>Questions/Answers</h3>
 								<h4>Possible Questions Students Might Ask</h4>
-									<b>•	Do I need to buy anything special for the program or to attend CCC? For example, tools, computer, uniforms?</b>
-									<br />
-									A computer is recommended, but not required.  Most business software is geared towards the pc instead of a Mac. 
-									<br />
-									<b>•	When can I start classes?</b>
-									<br />
-									Check the college calendar for specific dates, however classes begin in the fall, spring and summer semesters.
-									<br />
-									<b>•	How long will it take to earn my degree?</b>
-									<br />
-									Students pursuing their degree full time can expect to complete their degree in two years.
-									<br />
-									<b>•	Can I go full or part-time?</b>
-									<br />
-									Students can pursue their degree part time.  Be sure to check course availability as not all courses are offered each term.
-									<br />
-									<b>•	Can I work and attend classes?</b>
-									<br />
-									Students can work while attending classes however we recommend not working over 20 hours per week to allow enough time for class and homework.
-									<br />
-									<b>•	How long will I be in classes each day?</b>
-									<br />
-									Class sessions vary by specialization and delivery method.  For students attending lectures, we try to schedule the Developer courses on M-W-F in the morning.
-									<br />
-									<b>•	Do I have to attend class at a certain location or online?</b>
-									<br />
-									Each course is different and depending on the delivery method you chose would dictate the class attendance requirements.
-								</p>
+								<b>Do I need to buy anything special for the program or to attend CCC? For example, tools, computer, uniforms?</b>
+								<p>A computer is recommended, but not required.  Most business software is geared towards the pc instead of a Mac.</p>
+								<b>When can I start classes?</b>
+								<p>Check the college calendar for specific dates, however classes begin in the fall, spring and summer semesters.</p>
+								<b>How long will it take to earn my degree?</b>
+								<p>Students pursuing their degree full time can expect to complete their degree in two years.</p>
+								<b>Can I go full or part-time?</b>
+								<p>Students can pursue their degree part time.  Be sure to check course availability as not all courses are offered each term.</p>
+								<b>Can I work and attend classes?</b>
+								<p>Students can work while attending classes however we recommend not working over 20 hours per week to allow enough time for class and homework.</p>
+								<b>How long will I be in classes each day?</b>
+								<p>Class sessions vary by specialization and delivery method.  For students attending lectures, we try to schedule the Developer courses on M-W-F in the morning.</p>
+								<b>Do I have to attend class at a certain location or online?</b>
+								<p>Each course is different and depending on the delivery method you chose would dictate the class attendance requirements.<p>
 							</div>
 						</div>
+						<br/><br/>
 					</div>
 				</div>	
 			</article>
 		</section>
 		
-		<div class="bottomnav">
+		<div class="bottomnav">		
 			<nav class="navbar fixed-bottom py-0 navbar-primary">   
-				<div class="container">
+				<div class="container-fluid">
 					<button id="quicklinkicon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbottom" aria-controls="navbottom" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbottom">
 						<ul class="navbar-nav">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a></li>
+								<a class="nav-link" href="index.html"><strong>Home</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="infotechprogram.html">InfoTech Program</a></li>
+								<a class="nav-link" href="infotechprogram.html"><strong>InfoTech Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="developer.html">Developer</a></li>
+								<a class="nav-link" href="developer.html">&#8226;&nbsp;Developer</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="networking.html">Networking</a></li>
+								<a class="nav-link" href="networking.html">&#8226;&nbsp;Networking</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="techsupport.html">Tech Support</a></li>
+								<a class="nav-link" href="techsupport.html">&#8226;&nbsp;Tech Support</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecprogram.html">BTEC Program</a></li>
+								<a class="nav-link" href="btecprogram.html"><strong>BTEC Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecaasdegree.html">BTEC AAS Degree</a></li>
+								<a class="nav-link" href="btecaasdegree.html">&#8226;&nbsp;AAS Degree</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecdiploma.html">BTEC Diploma</a></li>
+								<a class="nav-link" href="btecdiploma.html">&#8226;&nbsp;Diploma</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecsoftware.html">BTEC Software Certificate</a></li>
+								<a class="nav-link" href="btecsoftware.html">&#8226;&nbsp;Software Certificate</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btectechnology.html">BTEC Technology Certificate</a></li>
+								<a class="nav-link" href="btectechnology.html">&#8226;&nbsp;Technology Certificate</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="btecsocialmedia.html">&#8226;&nbsp;Social Media Certificate</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								Contact Us</a></li>							
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="external.html">Program Videos</a></li>
 						</ul>
+						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
-						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
+						<a href="index.html">Copyright &copy;2018 Central Community College. All rights reserved.</a>
 					</div>
 				</div>
 			</nav>

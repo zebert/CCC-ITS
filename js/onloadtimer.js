@@ -10,7 +10,24 @@
 900000 = 15 minutes
 1800000 = 30 minutes 
 
----------------------------------------*/
+Modify the onclick of the body tag in a web page 
+if you want a different refresh time.
+
+default body tag is:
+	<body onload="onloadtimer(0)"
+
+If timein parameter is greater than 0 then use it, 
+otherwise default to 15 minutes
+---------------------------------------------------*/
 function onloadtimer(timein) {
-	setTimeout(function(){window.location = 'index.html';}, timein);
+		var hash = 0;
+		if(timein > 0)
+			{
+				hash = timein;
+			}
+		else
+			{
+				hash = 900000;
+			}
+		setTimeout(function(){window.location = 'index.html';}, hash);
 }
