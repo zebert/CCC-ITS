@@ -17,7 +17,7 @@
 		<title>BTEC Program</title>
 
 	</head>
-	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
+	<body onload="onloadtimer(0)">
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -47,6 +47,7 @@
 									<a class="dropdown-item" href="btecdiploma.html">BTEC Diploma</a>
 									<a class="dropdown-item" href="btecsoftware.html">BTEC Software Certificate</a>
 									<a class="dropdown-item" href="btectechnology.html">BTEC Technology Certificate</a>
+									<a class="dropdown-item" href="btecsocialmedia.html">BTEC Social Media Certificate</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -55,14 +56,17 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" href="get-comp-sci-students-excited.pdf" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
+									<a class="dropdown-item" href="external.html">Program Videos</a>
 								</div>
 							</li>
 						</ul>
@@ -172,7 +176,7 @@
 								</p>
 								<p><strong>
 								<a href="https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm" 
-								onclick="urlpopup(this.href,'myWindow','1100','400','yes');return false">
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
 								View BLS details &raquo;</a>
 								</strong></p>
 							</div>
@@ -190,11 +194,11 @@
 									his/her advisor prior to any academic planning and 
 									registration.
 								</p>
-								<p>
+					
 									<h4>Options</h4>
 									<strong>Associate of Applied Science</strong>
 									<ul>
-										<li><strong><a href="btecaasdegree.html" alt="">Business Technology AAS Degree</a></strong><br/>
+										<li><strong><a href="btecaasdegree.html">Business Technology AAS Degree</a></strong><br/>
 											The Business Technology Degree provides the 
 											skills and knowledge necessary to prepare 
 											students for careers as business support 
@@ -203,7 +207,7 @@
 									</ul>
 									<strong>Diploma</strong>
 									<ul>
-										<li><strong><a href="btecdiploma.html" alt="">Business Technology Diploma</a></strong><br/>
+										<li><strong><a href="btecdiploma.html">Business Technology Diploma</a></strong><br/>
 											The Business Technology diploma provides students 
 											with the fundamental knowledge and skills necessary 
 											in various business occupations.
@@ -211,133 +215,112 @@
 									</ul>
 										<strong>Certificate</strong>
 									<ul>									
-										<li><strong><a href="btecsoftware.html" alt="">Business Software Certificate</a></strong><br/>
+										<li><strong><a href="btecsoftware.html">Business Software Certificate</a></strong><br/>
 											The Business Software Certificate provides 
 											students with the necessary software skills 
 											to be successful in any business setting.
 										</li>
-										<li><strong><a href="btectechnology.html" alt="">Business Technology Certificate</a></strong><br/>
+										<li><strong><a href="btectechnology.html">Business Technology Certificate</a></strong><br/>
 											The Business Technology Certificate prepares 
 											students with basic skills utilized in the workplace.
 										</li>
+										<li><strong><a href="btecsocialmedia.html">Social Media Certificate</a></strong><br/>
+											The Social Media Certificate prepares 
+											students with the basic skills needed to navigate social network applications.
+										</li>
 									</ul>
-								</p>
+					
 							</div>
 							<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
 								<h3>Questions/Answers</h3>
-								<dl>
-									<dt>
-										How much hands-on practice is included? 
-										<dd>This program is very computer orientated so 
-										you will spend a lot of time on the computer 
-										completing projects and learning new and 
-										exciting software.</dd>
-									</dt>	
-									<dt>
-										How do instructors teach these courses? 
-										<dd>Instruction varies by instructor. </dd>
-									</dt>	
-									<dt>
-										What's a typical day in class like? 
-										<dd>It varies by instructor, but class are typically interactive 
-										and hands-on.</dd>
-									</dt>	
-									<dt>
-										How much of your program (not including general education courses) 
-										can be completed online? 
-										<dd>Our entire program can be completed online. We also have 
-										courses in 3 out of the 5 general education categories.</dd>
-									</dt>	
-									<dt>
-										How long is the program, certificate, diploma? 
-										<dd>You can complete a certificate in one semester and a diploma 
-										takes between 1 to 1 1/2 years to complete, and our degree is a 
-										two-year degree. </dd>
-									</dt>	
-									<dt>
-										If the program is selective, please explain the process. <dd>N/A</dd>
-									</dt>	
-									<dt>
-										If there is waitlist-what can students do in the meantime? 
-										<dd>If the student is on a waitlist for a course, then we typically 
-										enroll them in another required course and the advisor monitors the wait 
-										listed students. When an opening occurs, the advisor enrolls the student 
-										accordingly all while keeping the student informed of the process.</dd>
-									</dt>	
-									<dt>
-										What additional program costs are there? (tools, uniforms, insurance, 
-										drug testing, background check. licensing exam, etc.)  <dd> None</dd>
-									</dt>	
-									<dt>
-										If your students tend to continue their education, which colleges/universities do you see most of them transferring to?   What special transfer opportunities/articulation agreements are available to CCC students? 
-										<dd>Most of our students that continue-on to receive their 
-										bachelor's degree do so through Bellevue University, as they do a 
-										great job at accepting all our courses towards a degree.</dd>
-									</dt>	
-									<dt>
-										Do I need to buy anything special for the program or to attend CCC? 
-										For example, tools, computer, uniforms? 
-										<dd>It is highly recommended that you have reliable access to 
-										the Internet and that you download Microsoft 365 that is available 
-										for free to all students. Our help desk can assist you in downloading 
-										that software. Also, it would be ideal to have a PC rather than 
-										a Mac because all our courses are taught using a PC.</dd>
-									</dt>	
-									<dt>
-										When can I start classes?  
-										<dd>It depends on how you set your schedule up with your advisor.</dd>
-									</dt>	
-									<dt>
-										How long will it take to earn my degree? 
-										<dd>You can finish in two years by completing 15-16 
-										credits a semester for 4 semesters (depending upon if 
-										you need foundations courses etc.)</dd>
-									</dt>
-									<dt>
-										Can I go full or part-time? <dd>Either</dd>
-									</dt>	
-									<dt>
-										Can I work and attend classes? 
-										<dd>Most of our students do work while attending courses; 
-										that is why online is a popular option.</dd>
-									</dt>	
-									<dt>
-										How long will I be in classes each day? 
-										<dd>It depends on how you set your schedule up with your 
-										advisor, but we work very closely with our students to devise 
-										a plan that works best for them.</dd>
-									</dt>	
-									<dt>
-										Do I have to attend class at a certain location or online? 
-										<dd>All of our courses are available online. Depending upon 
-										each campus, the availability of lectures varies.</dd>
-									</dt>	
-								</dl>
+								<div>
+									<dl>
+										<dt>How much hands-on practice is included? </dt>
+											<dd>This program is very computer orientated so 
+											you will spend a lot of time on the computer 
+											completing projects and learning new and 
+											exciting software.</dd>
+										<dt>How do instructors teach these courses? </dt>
+											<dd>Instruction varies by instructor. </dd>
+										<dt>What's a typical day in class like? </dt>
+											<dd>It varies by instructor, but class are typically interactive 
+											and hands-on.</dd>
+										<dt>How much of your program (not including general education courses) 
+											can be completed online? </dt>
+											<dd>Our entire program can be completed online. We also have 
+											courses in 3 out of the 5 general education categories.</dd>
+										<dt>How long is the program, certificate, diploma? </dt>
+											<dd>You can complete a certificate in one semester and a diploma 
+											takes between 1 to 1 1/2 years to complete, and our degree is a 
+											two-year degree. </dd>
+										<dt>If the program is selective, please explain the process. </dt>
+											<dd>N/A</dd>
+										<dt>
+											If there is waitlist-what can students do in the meantime? </dt>
+											<dd>If the student is on a waitlist for a course, then we typically 
+											enroll them in another required course and the advisor monitors the wait 
+											listed students. When an opening occurs, the advisor enrolls the student 
+											accordingly all while keeping the student informed of the process.</dd>
+										<dt>What additional program costs are there? (tools, uniforms, insurance, 
+											drug testing, background check. licensing exam, etc.) </dt> 
+											<dd> None</dd>
+										<dt>If your students tend to continue their education, which 
+											colleges/universities do you see most of them transferring to?   
+											What special transfer opportunities/articulation agreements 
+											are available to CCC students? </dt>
+											<dd>Most of our students that continue-on to receive their 
+											bachelor's degree do so through Bellevue University, as they do a 
+											great job at accepting all our courses towards a degree.</dd>
+										<dt>Do I need to buy anything special for the program or to attend CCC? 
+											For example, tools, computer, uniforms? </dt>
+											<dd>It is highly recommended that you have reliable access to 
+											the Internet and that you download Microsoft 365 that is available 
+											for free to all students. Our help desk can assist you in downloading 
+											that software. Also, it would be ideal to have a PC rather than 
+											a Mac because all our courses are taught using a PC.</dd>
+										<dt>When can I start classes?  </dt>
+											<dd>It depends on how you set your schedule up with your advisor.</dd>
+										<dt>How long will it take to earn my degree? </dt>
+											<dd>You can finish in two years by completing 15-16 
+											credits a semester for 4 semesters (depending upon if 
+											you need foundations courses etc.)</dd>
+										<dt>Can I go full or part-time? </dt>
+											<dd>Either</dd>
+										<dt>Can I work and attend classes? </dt>
+											<dd>Most of our students do work while attending courses; 
+											that is why online is a popular option.</dd>
+										<dt>How long will I be in classes each day? </dt>
+											<dd>It depends on how you set your schedule up with your 
+											advisor, but we work very closely with our students to devise 
+											a plan that works best for them.</dd>
+										<dt>Do I have to attend class at a certain location or online? </dt>
+											<dd>All of our courses are available online. Depending upon 
+											each campus, the availability of lectures varies.</dd>
+									</dl>
+								</div>
 								<br/><br/>
 							</div>
 							<div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
 								<h3>Testimonials</h3>
 								<div>
-									<cite>&mdash; RayLynn Coble – Assistant Clerk I 
-										<p>
-											RayLynn Coble is an Assistant Clerk for the 
-											Supreme Court of Nebraska at Custer County Court 
-											in Broken Bow, Nebraska.  For the past 2 years 
-											in her duties as an Assistant Clerk, RayLynn 
-											works closely with the Judge and Clerk Magistrate 
-											to ensure that the court and judicial process runs 
-											smoothly.  She received her Associate’s Degree in 
-											Business Technology along with a Diploma in 
-											Legal Studies from Hastings Central Community 
-											College in 2014.  One year later, she obtained 
-											a certificate in Paralegal Studies from the 
-											Center for Legal Studies through Mid Plains 
-											Community College.  When RayLynn isn’t at work, 
-											she spends her time helping her husband and 
-											family on the farm, reading or sewing, and 
-											playing violin.
-										</p>
-									</cite>
+									<p><em><strong>&mdash; RayLynn Coble – Assistant Clerk I</strong><br/> 
+									RayLynn Coble is an Assistant Clerk for the 
+									Supreme Court of Nebraska at Custer County Court 
+									in Broken Bow, Nebraska.  For the past 2 years 
+									in her duties as an Assistant Clerk, RayLynn 
+									works closely with the Judge and Clerk Magistrate 
+									to ensure that the court and judicial process runs 
+									smoothly.  She received her Associate’s Degree in 
+									Business Technology along with a Diploma in 
+									Legal Studies from Hastings Central Community 
+									College in 2014.  One year later, she obtained 
+									a certificate in Paralegal Studies from the 
+									Center for Legal Studies through Mid Plains 
+									Community College.  When RayLynn isn’t at work, 
+									she spends her time helping her husband and 
+									family on the farm, reading or sewing, and 
+									playing violin.
+									</em></p>
 								</div>
 							</div>
 						</div>
@@ -355,38 +338,46 @@
 					<div class="collapse navbar-collapse" id="navbottom">
 						<ul class="navbar-nav">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a></li>
+								<a class="nav-link" href="index.html"><strong>Home</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="infotechprogram.html">InfoTech Program</a></li>
+								<a class="nav-link" href="infotechprogram.html"><strong>InfoTech Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="developer.html">Developer</a></li>
+								<a class="nav-link" href="developer.html">&#8226;&nbsp;Developer</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="networking.html">Networking</a></li>
+								<a class="nav-link" href="networking.html">&#8226;&nbsp;Networking</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="techsupport.html">Tech Support</a></li>
+								<a class="nav-link" href="techsupport.html">&#8226;&nbsp;Tech Support</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecprogram.html">BTEC Program</a></li>
+								<a class="nav-link" href="btecprogram.html"><strong>BTEC Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecaasdegree.html">BTEC AAS Degree</a></li>
+								<a class="nav-link" href="btecaasdegree.html">&#8226;&nbsp;AAS Degree</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecdiploma.html">BTEC Diploma</a></li>
+								<a class="nav-link" href="btecdiploma.html">&#8226;&nbsp;Diploma</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecsoftware.html">BTEC Software Certificate</a></li>
+								<a class="nav-link" href="btecsoftware.html">&#8226;&nbsp;Software Certificate</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btectechnology.html">BTEC Technology Certificate</a></li>
+								<a class="nav-link" href="btectechnology.html">&#8226;&nbsp;Technology Certificate</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="btecsocialmedia.html">&#8226;&nbsp;Social Media Certificate</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" onclick="showclosepopup()" target="myIframe">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" onclick="showclosepopup()" target="myIframe">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								Contact Us</a></li>							
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="external.html">Program Videos</a></li>
 						</ul>
 						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
-						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
+						<a href="index.html">Copyright &copy;2018 Central Community College. All rights reserved.</a>
 					</div>
 				</div>
 			</nav>

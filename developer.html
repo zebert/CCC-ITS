@@ -17,8 +17,8 @@
 		<title>Systems Developer</title>
 
 	</head>
-	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
-		<header>
+	<body onload="onloadtimer(0)">
+	<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
 					<img class="navbar-brand" src="images/logos/College_Vert_GIF_White.gif" alt="logo" height="65" width="65">
@@ -47,6 +47,7 @@
 									<a class="dropdown-item" href="btecdiploma.html">BTEC Diploma</a>
 									<a class="dropdown-item" href="btecsoftware.html">BTEC Software Certificate</a>
 									<a class="dropdown-item" href="btectechnology.html">BTEC Technology Certificate</a>
+									<a class="dropdown-item" href="btecsocialmedia.html">BTEC Social Media Certificate</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -55,14 +56,17 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" href="get-comp-sci-students-excited.pdf" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
+									<a class="dropdown-item" href="external.html">Program Videos</a>
 								</div>
 							</li>
 						</ul>
@@ -93,59 +97,102 @@
 						<div class="tab-content" id="v-pills-tabContent">
 							<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">	
 							<h3>Overview</h3>
-							<strong>Reasons to attend CCC?</strong>
-							<ul>
-								<li>Our hands-on approach to learning allows students to immerse themselves in the latest technologies.  Our Developer specialization uses real world projects.  Student can work with real clients and complete projects that can be placed in a portfolio for when they apply for jobs, giving them a leg up over other students from other programs.  </li>
-								<li>Student also work with clients/co-workers from various locations.  The Developer specialization uses distance technologies for students to collaborate with other students from various campuses. This helps them prepare and practice their online meeting skills as well as distance collaboration skills.  These are valuable skills that employers are looking for!</li>
-							</ul>
-							<strong>What are the major skills a student will learn from your program?</strong>
+								<p>
+								The development of mobile devices such as smartphones or tablets has revolutionized our 
+								quality and way of life. With 85% of the U.S. population using the Internet in 2016, it is 
+								challenging for businesses to survive without it. A degree in Information Technology and 
+								Systems from CCC will help you fill the continued computer and technical skills gap found
+								in the workforce.
+								</p>
+								<p>
+								This specialization prepares you to work either as a software developer or web developer.
+								Whether you develop the next big app or develop the systems that make technology run, as a 
+								software developer you'll be the creative mind behind computer programs. Web developers design
+								and create websites, but the responsibilities go beyond the look of the site. Web developers 
+								are also responsible for the site's technical aspects, such as the website's speed and the amount
+								of traffic it can handle. 
+								</p>
+							<h3>Outcomes</h3>
+								<p>
+								Student Learning Outcomes<br/>
+								Developer graduates are prepared to:
+								</p>
 								<ul>
-									<li>There are many skills that INFO Technology and Systems students will learn including:  problem solving, web and application development, troubleshooting, database management, project management, planning, research, and customer service.</li>
-									<li>Software Developers are the creative minds behind computer programs. Some develop the applications that allow people to do specific tasks on a computer or another device. Others develop the underlying systems that run the devices or that control networks according to the Bureau of Labor Statistics (https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm).</li>
-								</ul>
-								<strong>What additional program costs are there?</strong>
-								<ul>
-									<li>Students in the Developer specialization are required to purchase their own web hosting site.  Cost for this can vary from $0 to $100 per year. Students typically chose the plan that is best for them and most pay a monthly fee around $7 per month.</li>
-									<li>Microsoft Office 365 software is provided free from the college. This software includes Word, Excel, Access, PowerPoint, and OneDrive.</li>
-									<li>Students also have access to our Virtual Desktop Interface which allows students to remotely log into our server and access software provided by the college.</li>
-									<li>Information Technology and Systems program provides students taking an INFO course the ability to download Microsoft software for free from our Imagine Academy.  This software includes a majority of Microsoft’s software including Windows, Visual Studio, Project, Visio, etc.</li>
-									<li>Most other software required in the program is open source software which is available for free to download.</li>
+									<li>Integrate web and mobile programming with databases to solve business problems.</li>
+									<li>Develop data-driven applications for various platforms including desktop, mobile and web.</li>
+									<li>Design, maintain, and troubleshoot databases and programs.</li>
 								</ul>
 							</div>
 							<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-									<h3>Careers</h3>									
-									<p><strong>What are the starting wages of graduates?</strong></p>
-									<ul>
-										<li>Software Development has been in the top 5 jobs for the past few years according to US News and World Report. According to their 2018 report, Software Developers are the number 1 job.  See the following URL for more information. https://www.usnews.com/info/blogs/press-room/articles/2018-01-10/us-news-announces-the-2018-best-jobs</li>
-										<li>The median salary from this report is $100,080, however most students entering in the work force earn around $45,000 - $55,000 for entry-level work and progress to the median salary throughout their career.</li>
-									</ul>
-									<p><strong>What local employers or potential employers hire your students?</strong></p>
-									<ul>
-										<li>Students with the Developer specialization have received employment in a number of various companies in many locations across the state.  A few examples are Xpanion in Kearney, City of Hastings, Platte Valley Communications in Kearney, Mid America Computing Company of Blair, Hastings Public Schools, Educational Service Unit, Gallop of Omaha, Becton-Dickinson - Holdrege.</li>
-									</ul>
-									<p><strong>What career possibilities are available for students earning a:</strong></p>
-									<dl>
-										<dt>Certificate</dt>
-										<dd> This 12 credit option is a great advantage for students who may already have a degree or experience in another field. Adding a certificate can enhance your employability.</dd>
-										<dt>Diploma</dt>
-										<dd>This one year, 30 credit option enables students to pursue work in the industry.  This option includes 9 credits of General Education courses and 21 credits in Information Technology and Systems courses.</dd>
-										<dt>Degree</dt>
-										<dd>The best option for students to pursue a career in Information Technology.  According to the Bureau of Labor Statistics, Information Technology occupations are expected to grow at 13%.</dd>
-									</dl>
+								<h3>Careers</h3>									
+								<h3>Job Titles</h3>
+								<ul>
+									<li>Application Developer</li>
+									<li>Software Tester</li>
+									<li>Programmer/Analyst</li>
+									<li>Web Developer</li>
+									<li>Web Administrator</li>
+									<li>Database Developer</li>
+									<li>Database Analyst</li>
+								</ul>
+								<h3>Employment Outlook</h3>
+								<b>What are the starting wages of graduates? Earning potential?</b>
+								<p>Software Development has been in the top 5 jobs for the past few years according 
+								to US News and World Report. According to their 2018 report, Software Developers are the 
+								number 1 job.  Click the link for more information.&nbsp;
+								<strong><a href="https://www.usnews.com/info/blogs/press-room/articles/2018-01-10/us-news-announces-the-2018-best-jobs"
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">&laquo;View 2018 Report&raquo;</a></strong></p>
+								<p>The median salary from this report is $100,080, however most students entering in 
+								the work force earn around $45,000 - $55,000 for entry-level work and progress to the 
+								median salary throughout their career.</p>
+
+								<b>What local employers or potential employers hire your students? 
+								(banks, health care facilities, businesses, etc.)?</b>
+								<p>Students with the Developer specialization have received employment in a 
+								number of various companies in many locations across the state.  A few examples 
+								are Xpanion in Kearney, City of Hastings, Platte Valley Communications in Kearney,
+								Mid America Computing Company of Blair, Hastings Public Schools, Educational Service 
+								Unit, Gallop of Omaha, Becton-Dickinson - Holdrege.</p>
+
+								<b>What career possibilities are available for students earning a:</b>
+								<ul>
+									<li>Certificate – This 12 credit option is a great advantage for students who may already 
+									have a degree or experience in another field.  Adding a certificate can enhance your employability.</li>
+									<li>Diploma – This one year, 30 credit option enables students to pursue work in the industry. 
+									This option includes 9 credits of General Education courses and 21 credits in Information 
+									Technology and Systems courses.</li>
+									<li>Degree – The best option for students to pursue a career in Information Technology. 
+									According to the Bureau of Labor Statistics, Information Technology occupations are expected 
+									to grow at 13%.</li>
+								</ul>
+								<p><strong>Explore these Bureau of Labor Statistics links: </strong></p>
+								<ul>
+									<li><strong><a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm#tab-1"
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Software Developer</a></strong></li>
+									<li><strong><a href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm"
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Web Developer</a></strong></li>
+									<li><strong><a href="https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm"
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Computer Programmer</a></strong></li>
+									<li><strong><a href="https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm"
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Database Administrator</a></strong></li>
+								</ul>
 							</div>
 							<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
 									<h3>Program Options</h3>
-								<p>The Information Technology & Systems Degree provides a comprehensive education in the skills, techniques and methodologies of information technology and systems. Graduates of the Information Technology & Systems program will be able to provide effective IT functions to solve business problems using best practice methodologies. Students can specialize in one of the following areas: Developer, Networking, and Technical Support.</p>
-								<p><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10749&returnto=3152" target="_blank">Information Technology & Systems AAS Degree</a></p>
-								<p><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10793" target="_blank">Developer Specialization</a>
-								
+								<p>The Information Technology & Systems Degree provides a comprehensive education in the skills, techniques and 
+								methodologies of information technology and systems. Graduates of the Information Technology & Systems program will 
+								be able to provide effective IT functions to solve business problems using best practice methodologies. 
+								Students can specialize in one of the following areas: Developer, Networking, and Technical Support.</p>
+								<p><strong><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10749&returnto=3152"
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Information Technology & Systems AAS Degree</a></strong></p>
+								<p><strong><a href="http://catalog.cccneb.edu/preview_program.php?catoid=35&poid=10793"
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Developer Specialization</a></strong></p>
 							</div>
 							<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
 								<h3>Questions/Answers</h3>
-								<p>
 								<dl>
 									<dt>Do I need to buy anything special for the program or to attend CCC? For example tools, computer, uniforms?</dt>
-									<dd>Do I need to buy anything special for the program or to attend CCC? For example tools, computer, uniforms?</dd>
+									<dd>A computer is recommended, but not required.  Most business software is geared towards the pc instead of a Mac. </dd>
 									<dt>When can I start classes?</dt>
 									<dd>Check the college calendar for specific dates, however classes begin in the fall, spring and summer semesters.</dd>
 									<dt>How long will it take to earn my degree?</dt>
@@ -159,9 +206,9 @@
 									<dt>Do I have to attend class at a certain location or online?</dt>
 									<dd>Each course is different and depending on the delivery method you chose would dictate the class attendance requirements.</dd>
 								</dl>
-								</p>
 							</div>
 						</div>
+						<br/><br/>
 					</div>
 				</div>	
 			</article>
@@ -169,46 +216,55 @@
 		
 
 
-		<div class="bottomnav">
+		<div class="bottomnav">		
 			<nav class="navbar fixed-bottom py-0 navbar-primary">   
-				<div class="container">
+				<div class="container-fluid">
 					<button id="quicklinkicon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbottom" aria-controls="navbottom" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbottom">
 						<ul class="navbar-nav">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a></li>
+								<a class="nav-link" href="index.html"><strong>Home</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="infotechprogram.html">InfoTech Program</a></li>
+								<a class="nav-link" href="infotechprogram.html"><strong>InfoTech Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="developer.html">Developer</a></li>
+								<a class="nav-link" href="developer.html">&#8226;&nbsp;Developer</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="networking.html">Networking</a></li>
+								<a class="nav-link" href="networking.html">&#8226;&nbsp;Networking</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="techsupport.html">Tech Support</a></li>
+								<a class="nav-link" href="techsupport.html">&#8226;&nbsp;Tech Support</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecprogram.html">BTEC Program</a></li>
+								<a class="nav-link" href="btecprogram.html"><strong>BTEC Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecaasdegree.html">BTEC AAS Degree</a></li>
+								<a class="nav-link" href="btecaasdegree.html">&#8226;&nbsp;AAS Degree</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecdiploma.html">BTEC Diploma</a></li>
+								<a class="nav-link" href="btecdiploma.html">&#8226;&nbsp;Diploma</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecsoftware.html">BTEC Software Certificate</a></li>
+								<a class="nav-link" href="btecsoftware.html">&#8226;&nbsp;Software Certificate</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btectechnology.html">BTEC Technology Certificate</a></li>
+								<a class="nav-link" href="btectechnology.html">&#8226;&nbsp;Technology Certificate</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="btecsocialmedia.html">&#8226;&nbsp;Social Media Certificate</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								Contact Us</a></li>							
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="external.html">Program Videos</a></li>
 						</ul>
+						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
-						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
+						<a href="index.html">Copyright &copy;2018 Central Community College. All rights reserved.</a>
 					</div>
 				</div>
 			</nav>

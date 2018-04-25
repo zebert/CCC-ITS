@@ -29,6 +29,7 @@ section#main {
    width: 100%;
 }
 
+/* For all pages */
 section#main #pagetitle {
    text-align: center;
 	font-style: italic;
@@ -36,9 +37,17 @@ section#main #pagetitle {
 }
 
 
-/* adjust the width of the pill box */
+/* adjust the width and color of the pill tabs */
 section#main .nav > .nav-link {
    width: 20rem;
+   color: black;
+}
+
+/* for external.html video tabs 
+	adjust the width and color of the pill tabs */
+	
+article#video  .nav > .nav-link {
+   width: 10rem;
    color: black;
 }
 

@@ -16,7 +16,7 @@
 		<link href="css/btecstyles.css" rel="stylesheet" />
 		<title>Faculty</title>
 	</head>
-	<body onload="onloadtimer(300000)" <!-- 5 minutes -->
+	<body onload="onloadtimer(0)">
 		<header>
 			<div class="topnav">
 				<nav class="navbar navbar-expand-sm py-0 navbar-dark fixed-top  bg-dark">
@@ -46,6 +46,7 @@
 									<a class="dropdown-item" href="btecdiploma.html">BTEC Diploma</a>
 									<a class="dropdown-item" href="btecsoftware.html">BTEC Software Certificate</a>
 									<a class="dropdown-item" href="btectechnology.html">BTEC Technology Certificate</a>
+									<a class="dropdown-item" href="btecsocialmedia.html">BTEC Social Media Certificate</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -54,14 +55,17 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown03">
-									<a class="dropdown-item" class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a>
+									<a class="dropdown-item" href="get-comp-sci-students-excited.pdf" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">9 Facts from PLURALSIGHT</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown04">
-									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a>
+									<a class="dropdown-item" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+									onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">Contact Us</a>
 									<a class="dropdown-item" href="acknowledge.html">Acknowledgement</a>
+									<a class="dropdown-item" href="external.html">Program Videos</a>
 								</div>
 							</li>
 						</ul>
@@ -69,7 +73,6 @@
 				</nav>
 			</div>
 		</header> 
-
 		<section id="main">
 			<article class="container">
 				<div class="row">
@@ -180,46 +183,55 @@
 			</article>
 		</section>
 		
-		<div class="bottomnav">
+		<div class="bottomnav">		
 			<nav class="navbar fixed-bottom py-0 navbar-primary">   
-				<div class="container">
+				<div class="container-fluid">
 					<button id="quicklinkicon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbottom" aria-controls="navbottom" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbottom">
 						<ul class="navbar-nav">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a></li>
+								<a class="nav-link" href="index.html"><strong>Home</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="infotechprogram.html">InfoTech Program</a></li>
+								<a class="nav-link" href="infotechprogram.html"><strong>InfoTech Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="developer.html">Developer</a></li>
+								<a class="nav-link" href="developer.html">&#8226;&nbsp;Developer</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="networking.html">Networking</a></li>
+								<a class="nav-link" href="networking.html">&#8226;&nbsp;Networking</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="techsupport.html">Tech Support</a></li>
+								<a class="nav-link" href="techsupport.html">&#8226;&nbsp;Tech Support</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecprogram.html">BTEC Program</a></li>
+								<a class="nav-link" href="btecprogram.html"><strong>BTEC Program</strong></a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecaasdegree.html">BTEC AAS Degree</a></li>
+								<a class="nav-link" href="btecaasdegree.html">&#8226;&nbsp;AAS Degree</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecdiploma.html">BTEC Diploma</a></li>
+								<a class="nav-link" href="btecdiploma.html">&#8226;&nbsp;Diploma</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btecsoftware.html">BTEC Software Certificate</a></li>
+								<a class="nav-link" href="btecsoftware.html">&#8226;&nbsp;Software Certificate</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="btectechnology.html">BTEC Technology Certificate</a></li>
+								<a class="nav-link" href="btectechnology.html">&#8226;&nbsp;Technology Certificate</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="btecsocialmedia.html">&#8226;&nbsp;Social Media Certificate</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="faculty.html">Faculty</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="get-comp-sci-students-excited.pdf" target="_blank">9 Facts from PLURALSIGHT</a></li>
+								<a class="nav-link" href="get-comp-sci-students-excited.pdf" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								9 Facts from PLURALSIGHT</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" target="_blank">Contact Us</a></li>
+								<a class="nav-link" href="http://www.cccneb.edu/contact/" title="Contact Us" 
+								onclick="urlpopup(this.href,'myWindow','0','0','yes');return false">
+								Contact Us</a></li>							
 							<li class="nav-item">
 								<a class="nav-link" href="acknowledge.html">Acknowledgement</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="external.html">Program Videos</a></li>
 						</ul>
+						<br/><br/>
 					</div>
 					<div class="navbar-brand footer-copyright">
-						<a href="index.html" alt="">Copyright &copy;2018 Central Community College. All rights reserved.</a>
+						<a href="index.html">Copyright &copy;2018 Central Community College. All rights reserved.</a>
 					</div>
 				</div>
 			</nav>
